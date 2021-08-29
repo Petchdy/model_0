@@ -37,7 +37,7 @@ BS = 32
 comments = []
 labels = []
 
-with open("train.txt") as f:
+with open("train.txt", encoding='utf-8') as f: #ผมไปหาในเน็ตมาลองดู --> ,encoding='utf-8'
     for line in f:
         comments.append(line.strip())
 
